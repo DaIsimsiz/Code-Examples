@@ -40,13 +40,15 @@ class Program
         }
 
         int TestResult = 80;
+        const int ace = 90;
+        const int pass = 60;
         // Relational Pattern: Compares the expression to a constant.
         switch (TestResult) // (Expression)
         {
-            case > 90:    // (Constant)
+            case > ace:    // (Constant)
                 Console.WriteLine("Ace!");
                 break;
-            case > 60:   // (Constant)
+            case > pass:   // (Constant)
                 Console.WriteLine("Pass!");
                 break;
             default:     // This code will execute if nothing else works.
