@@ -35,13 +35,16 @@ class Program
                 switch (DetermineWinner(pcMove, input))
                 {
                     case "draw":
-                        draw++; Console.WriteLine("It's a draw!");
+                        draw++;
+                        Console.WriteLine("It's a draw!");
                         break;
                     case "player":
-                        win++; Console.WriteLine("You win!");
+                        win++;
+                        Console.WriteLine("You win!");
                         break;
                     case "pc":
-                        loss++; Console.WriteLine("I win!");
+                        loss++;
+                        Console.WriteLine("I win!");
                         break;
                 }
 
@@ -55,8 +58,11 @@ class Program
     }
     static string DetermineWinner(ConsoleKey pc, ConsoleKey player)
     {
-        if (pc == player) return "draw";
-        else if ((pc == ConsoleKey.R && player == ConsoleKey.P) || (pc == ConsoleKey.P && player == ConsoleKey.S) || (pc == ConsoleKey.S && player == ConsoleKey.R)) return "player";
-        else return "pc";
+        if (pc == player) { return "draw"; }
+        else if ((pc == ConsoleKey.R && player == ConsoleKey.P) ||
+                 (pc == ConsoleKey.P && player == ConsoleKey.S) ||
+                 (pc == ConsoleKey.S && player == ConsoleKey.R))
+                    { return "player"; }
+        else { return "pc"; }
     }
 }
