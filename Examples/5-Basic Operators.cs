@@ -61,3 +61,30 @@ class Program
         Console.WriteLine("Result of '(true || flase)' is: " + (true || false));
     }
 }
+
+/// Output
+// Result of 'x = 5'      is: 5
+// Result of 'x++'        is: 6
+// Result of 'x--'        is: 5
+// Result of 'x = 3 * 5'  is: 15
+// Result of 'x = 30 / 3' is: 10
+// Result of 'x = 11 % 5' is: 1
+// Result of 'x = 7 + 8'  is: 15
+// Result of 'x = 4 - 9'  is: -5
+// 
+// Result of 'x = 30'  is: 30
+// Result of 'x += 7'  is: 37
+// Result of 'x -= 11' is: 26
+// Result of 'x *= 4'  is: 104
+// Result of 'x /= 2'  is: 52
+// Result of 'x %= 5'  is: 2
+// 
+// Result of '1 == 1'   is: True
+// Result of '20 < 50'  is: True
+// Result of '80 > 7'   is: True
+// Result of '40 <= 40' is: True
+// Result of '20 >= 21' is: False
+// 
+// Result of '!true'           is: False
+// Result of '(true && false)' is: False
+// Result of '(true || flase)' is: True

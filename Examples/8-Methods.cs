@@ -54,3 +54,14 @@ class Program
         return returnArr;
     }
 }
+
+/// Output
+// AddNumbers method was called!
+// 24
+// False
+// .god yzal eht revo spmuj xof nworb kciuq ehT
+// 1
+// 2
+// 3
+// 4
+// 5

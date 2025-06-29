@@ -20,3 +20,13 @@ class Program
         }
     }
 }
+
+/// Input
+// Hello, World!
+// [Backspace]
+
+/// Output
+// Hello, World!
+// String: Hello, World!
+// Key   : Backspace
+// Backspace pressed!

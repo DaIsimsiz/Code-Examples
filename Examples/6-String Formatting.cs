@@ -29,3 +29,17 @@ class Program
         Console.WriteLine(Math.PI + ", PI!");
     }
 }
+
+/// Output
+// Interpolation is used when you will use variables inside a string. We can use constants like 3,141592653589793, expressions like False, or our own variables like Hello! This is a separate variable.
+// 
+// Verbatim\is\usually\used\for\file\paths as it ignores escaped characters. An example of an escaped character is \n which is a newline.
+// 
+// Raw string literals can span
+// multiple lines, and have
+//     mutliple quotation marks (")
+//     inside them without problem.
+// 
+// 
+// 3,141592653589793, PI!
+// 3,141592653589793, PI!

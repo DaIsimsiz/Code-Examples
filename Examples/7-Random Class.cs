@@ -21,3 +21,14 @@ class Program
         Console.WriteLine($"{R.Next()} - {R.NextSingle()} - {R.Next(100)}");
     }
 }
+
+/// Output
+// Random.Next()         = 1756914836
+// Random.Next(min, max) = -58
+// Random.Next(max)      = 70
+// Random.NextSingle()   = 0,6518061
+// 
+// If the same seed is used, the method will give the same values.
+// Seed = 12345
+// 143337951 - 0,07015951 - 77
+// 143337951 - 0,07015951 - 77

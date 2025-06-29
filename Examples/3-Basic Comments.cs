@@ -10,7 +10,10 @@ class Program
         /*
         Delimited comment
         */
-        
+
         Console./*Delimited comments can be between codes (But they cannot split words!)*/WriteLine("Hello, world!");
     }
 }
+
+/// Output
+// Hello, world!

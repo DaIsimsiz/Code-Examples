@@ -6,16 +6,16 @@ class Program
     static void Main()
     {
         // Range: [-2147483648 - 2147483647]
-        int Integer    = 1234567890;
+        int Integer = 1234567890;
 
         // Range: [±1.5*10^−45 - ±3.4*10^38] Precision: 6-9 digits
-        float Float    = 3.14159265f;
+        float Float = 3.14159265f;
 
         // Range: [true, false]
-        bool Boolean   = true;
+        bool Boolean = true;
 
         // Virtually infinite capacity
-        string Text    = "The quick brown fox jumps over the lazy dog.";
+        string Text = "The quick brown fox jumps over the lazy dog.";
 
         // Can store any single character
         char Character = 'ඞ';
@@ -27,3 +27,10 @@ class Program
         Console.WriteLine("       Boolean value: " + Boolean);
     }
 }
+
+/// Output
+//        Integer value: 1234567890
+// Floating point value: 3,1415927
+//         String value: The quick brown fox jumps over the lazy dog.
+//      Character value: ඞ
+//        Boolean value: True

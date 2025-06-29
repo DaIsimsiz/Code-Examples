@@ -46,3 +46,7 @@ class Contact
         // Class myClass = new();
         // myClass.variable; / myClass.method(); 
 }
+
+/// Output:
+// John Smith's (24M) number is 123456789012.
+// This is a static method!
