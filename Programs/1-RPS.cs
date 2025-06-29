@@ -7,6 +7,7 @@
 // 5 - Basic Operators
 // 6 - String Formatting
 // 7 - Random Class
+// 8 - Methods
 
 class Program
 {
@@ -25,28 +26,22 @@ class Program
         while (true)
         {
             input = Console.ReadKey().Key;
-            
+
             if (ValidMoves.Contains(input))
             {
                 pcMove = ValidMoves[R.Next(3)];
                 Console.WriteLine($"Your move is: {input}\nI picked: {pcMove}");
-                
-                switch (pcMove)
+
+                switch (DetermineWinner(pcMove, input))
                 {
-                    case ConsoleKey.R:
-                        if      (input == ConsoleKey.R) { draw++; Console.WriteLine("It's a draw!"); }
-                        else if (input == ConsoleKey.P) { win++;  Console.WriteLine("You win!");     }
-                        else                            { loss++; Console.WriteLine("I win!");       }
+                    case "draw":
+                        draw++; Console.WriteLine("It's a draw!");
                         break;
-                    case ConsoleKey.P:
-                        if      (input == ConsoleKey.R) { loss++; Console.WriteLine("I win!");       }
-                        else if (input == ConsoleKey.P) { draw++; Console.WriteLine("It's a draw!"); }
-                        else                            { win++;  Console.WriteLine("You win!");     }
+                    case "player":
+                        win++; Console.WriteLine("You win!");
                         break;
-                    case ConsoleKey.S:
-                        if      (input == ConsoleKey.R) { win++;  Console.WriteLine("You win!");     }
-                        else if (input == ConsoleKey.P) { loss++; Console.WriteLine("I win!");       }
-                        else                            { draw++; Console.WriteLine("It's a draw!"); }
+                    case "pc":
+                        loss++; Console.WriteLine("I win!");
                         break;
                 }
 
@@ -57,5 +52,11 @@ class Program
                 Console.WriteLine("That is not a valid move!");
             }
         }
+    }
+    static string DetermineWinner(ConsoleKey pc, ConsoleKey player)
+    {
+        if (pc == player) return "draw";
+        else if ((pc == ConsoleKey.R && player == ConsoleKey.P) || (pc == ConsoleKey.P && player == ConsoleKey.S) || (pc == ConsoleKey.S && player == ConsoleKey.R)) return "player";
+        else return "pc";
     }
 }
